@@ -215,7 +215,7 @@ class CloudInvetarioResourceManager:
     # sorting based on whether a resource needs priority in fetching or not
     res_list = list(set((res_dep_list or []) + self.res_list))
     for resource in res_list:
-      if resource in res_dep_list:
+      if res_dep_list and resource in res_dep_list:
         self.dep_classif["dependency"].add(resource)
       else:
         self.dep_classif["not_dependency"].add(resource)

@@ -1,0 +1,17 @@
+
+storage:
+  dsn: sqlite:///cloudinventory.db
+
+collectors:
+#  hcloud-1:
+#    module: hetzner-hcloud
+#    config:
+#      api_token: xvBYohFN5kDvNQxsLzQjSCaM25ZIYNCGqFZUtLy0GZrQKDCbNnDkXBIIqfYSMMW2
+
+  hcloud-2:
+    module: hetzner-hcloud
+    config:
+      api_token: Pp4zOjcwbTlOb6XKf5OhhJvxXfkHRXK6iUPhmN9A3073mgGp65LFn1yclAbvfwg3
+      collect:
+        - lb
+        - volumes

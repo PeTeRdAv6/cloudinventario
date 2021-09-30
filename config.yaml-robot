@@ -1,0 +1,10 @@
+
+storage:
+  dsn: sqlite:///cloudinventory.db
+
+collectors:
+  robot-1:
+    module: hetzner-robot
+    config:
+      user: "#ws+jvG3P4V8"
+      password: "Wh7Crr8HpWHCQsh"
